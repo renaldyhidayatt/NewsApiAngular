@@ -1,0 +1,6 @@
+<app-navbar [title]="'Pencarian Berita'"></app-navbar>
+<div class="container">
+  <app-form (ParaSelect)="searchNews($event)"></app-form>
+  <app-spinner *ngIf="loading"></app-spinner>
+  <app-list-news [ListNews]="listNews"></app-list-news>
+</div>
